@@ -19,7 +19,7 @@ This project uses NLP, Sentiment analysis techniques and Neural Networks. The st
 
 ### Exploratory Data Analysis
 Number of Tweets per Airline: There are a total of 6 airlines.
-![My image](airline.png)
+[My image](images/airline.png)
 
 Distribution of sentiment categories
 ![My image](images/categories.png)
