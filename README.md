@@ -68,7 +68,7 @@ The airline tweets should be monitored in real-time. A pipeline that automates t
 By leveraging the machine learning model to monitor sentiment in real-time, the airline can quickly identify and address any issues that arise. This can help to prevent small problems from escalating and causing widespread negative sentiment among customers.
 
 ##  For More Information
-See the full analysis in the [Jupyter Notebook](https://github.com/Scholarchep/semantic-analysis-of-airline-tweets/blob/main/airline_tweets.ipynb) or review this [presentation](https://github.com/Scholarchep/King-County-housing-price-predictions/blob/main/presentation.pdf).
+See the full analysis in the [Jupyter Notebook](https://github.com/Scholarchep/semantic-analysis-of-airline-tweets/blob/main/airline_tweets.ipynb) or review this [presentation](https://github.com/Scholarchep/semantic-analysis-of-airline-tweets/blob/main/presentation.pdf).
 
 ## Repository Structure
  
