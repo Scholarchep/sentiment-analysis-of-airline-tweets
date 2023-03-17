@@ -19,7 +19,7 @@ This project uses NLP, Sentiment analysis techniques and Neural Networks. The st
 
 ### Exploratory Data Analysis
 Number of Tweets per Airline: There are a total of 6 airlines.
-![My image](images/lines.png)
+![My image](images/airlines.png)
 
 Distribution of sentiment categories
 ![My image](images/categories.png)
@@ -45,8 +45,12 @@ Common words in the tweets with positive sentiments: thanks, great, service, cus
 
 ### Modeling
 The sentiment analysis techniques, TextBlob and VADER, were used to analyze and classify the sentiment of textual data.<br>
-Recursive Neural Networks, Simple RNN and LSTM,are used to build models that classificaty the tweets as either positive, negative or neutral. These models are capable of learning dependencies between words and maintaining context over long sequences, making them useful for tasks like sentiment analysis and text classification. 
+Recursive Neural Networks, Simple RNN and LSTM,are used to build models that classify the tweets as either positive, negative or neutral. These models are capable of learning dependencies between words and maintaining context over long sequences, making them useful for tasks like sentiment analysis and text classification.<br>
+The basic Simple RNN and LSTM models were overfitting. Various techniques such as regularization, early stopping and reducing model complexity were used to reduce overfitting. RandomSearchCV was used for hyperparameter tuning to get an optimal random set of hyperparameters.
+The table below shows a comparison between the metrics of the various sentiment analysis techniques and Recursive Neural Networks.
+![My image](images/metrics.png)
 
+The best model is the tuned LSTM model. On evaluating the model using the test data, the model has the highest recall(76.0%) and f1_score(77.3%). It also has the lowest loss(0.651).
 
 ## Conclusions and recommendations
 Based on the common words in the tweets with negative and positive sentiments, the airline should focus on improving their customer service, punctuality, and communication with passengers.
