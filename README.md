@@ -15,11 +15,11 @@ The airline_tweets dataset was obtained from [Kaggle](https://www.kaggle.com/dat
 
 
 ## Methods
-This project uses NLP, Sentiment analysis techniques and Neural Networks. The steps taken business understanding, data understanding, data preparation, modeling and evaluation
+This project uses NLP, Sentiment analysis techniques and Neural Networks. The steps taken business understanding, data understanding, data preparation, modeling and evaluation.
 
 ### Exploratory Data Analysis
 Number of Tweets per Airline: There are a total of 6 airlines.
-![My image](airlines.png)
+![My image](airline.png)
 
 Distribution of sentiment categories
 ![My image](images/categories.png)
@@ -32,10 +32,12 @@ Tweets trend over time
 
 ### Data Preparation
 - Checking for missing values and duplicates
-- Preprocessing the text to remove emojis, punctuation, stopwords, hyperlinks and lemmatize the words
-The top 15 words in the negative and positive sentiment category
+- Preprocessing the text to remove emojis, punctuation, stopwords, hyperlinks and lemmatize the words<br>
+- After tokenization, the top 15 words in the negative and positive sentiment category are plotted.
 ![My image](images/negative.png)
 ![My image](images/positive.png)
+Common words in the tweets with negative sentiments: hour, cancelled, customer, service, time, delayed, call. <br>
+Common words in the tweets with positive sentiments: thanks, great, service, customer, time, best.
 
 - Splitting the data into train, test and validation sets
 - One-hot encoding the texts and encoding the categorical labels
@@ -47,10 +49,19 @@ Recursive Neural Networks, Simple RNN and LSTM,are used to build models that cla
 
 
 ## Conclusions and recommendations
+Based on the common words in the tweets with negative and positive sentiments, the airline should focus on improving their customer service, punctuality, and communication with passengers.
+For the negative sentiment tweets, the frequent use of words such as "cancelled", "delayed", and "hour" suggests that customers are experiencing issues with flight schedules and disruptions, which can be frustrating and stressful. 
+For the positive sentiment tweets, the frequent use of words such as "thanks", "great", and "service" suggests that customers appreciate good customer service and value when it is provided
+
+Since a recurrent neural network model has been built to automatically classify airline sentiments, the airline can use this model to gain insights into how customers are feeling about their experiences with the airline. The airline should:
+- Focus on improving the areas that are leading to negative sentiment.
+- Celebrate positive experiences.
+- Tailor customer service interactions based on sentiment.
 
 
 ## Future work
-
+The airline tweets should be monitored in real-time. A pipeline that automates the process of collecting, preprocessing, analyzing, and visualizing social media data should be set up. <br>
+By leveraging the machine learning model to monitor sentiment in real-time, the airline can quickly identify and address any issues that arise. This can help to prevent small problems from escalating and causing widespread negative sentiment among customers.
 
 ##  For More Information
 See the full analysis in the [Jupyter Notebook](https://github.com/Scholarchep/semantic-analysis-of-airline-tweets/blob/main/airline_tweets.ipynb) or review this [presentation](https://github.com/Scholarchep/King-County-housing-price-predictions/blob/main/presentation.pdf).
@@ -59,7 +70,7 @@ See the full analysis in the [Jupyter Notebook](https://github.com/Scholarchep/s
  
 ├── data                                      <- Both sourced externally and generated from code <br>
 ├── images                                    <- Both sourced externally and generated from code <br>
-├── Data_report.docx                          <- word document of project report <br>
+├── Data_report.docx                          <- Narrative documentation of the whole project <br>
 ├── README.md                                 <- The top-level README for reviewers of this project <br>
 ├── presentation.pdf                          <- PDF version of project presentation <br>
 └── airline_tweets.ipynb                      <- Narrative documentation of analysis in Jupyter notebook <br>
