@@ -74,10 +74,6 @@ See the full analysis in the [Jupyter Notebook](https://github.com/Scholarchep/s
  
 ├── data                                      <- Both sourced externally and generated from code <br>
 ├── images                                    <- Both sourced externally and generated from code <br>
-├── Data_report.docx                          <- Narrative documentation of the whole project <br>
 ├── README.md                                 <- The top-level README for reviewers of this project <br>
-├── presentation.pdf                          <- PDF version of project presentation <br>
-└── airline_tweets.ipynb                      <- Narrative documentation of analysis in Jupyter notebook <br>
-`
-
-
+├── airline_tweets.ipynb                      <- Narrative documentation of analysis in Jupyter notebook <br>    
+└── presentation.pdf                          <- PDF version of project presentation 
